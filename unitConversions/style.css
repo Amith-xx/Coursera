@@ -1,0 +1,133 @@
+/* sets the margin of all the element to 10px on all sides and the background-color to black */
+body{
+    margin: 10px;
+    background-color: black;
+}
+
+/* Home section  which has the app name and nav bar. The styling is applied by id */
+#home {
+    background-color:  #483355;
+    margin-left:-1cm;
+    margin-right:-1cm;
+    margin-top:-1cm;
+    padding: 2cm 1cm;
+}
+
+/* Application name inside the home section. The styling is applied by tag name */
+header {
+    font-size: 30px;
+    color: rgb(240, 234, 245);
+    float: left;
+    padding-left: 2cm;
+}
+
+/* Navigation Bar Container*/
+.topdiv {
+    float: right;
+    padding-right: 1cm;
+}
+  
+/* Navigation Bar Buttons */
+.topmenu {
+    color: lightgray;
+    background-color:   #483355;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration:none;
+    border-radius: 1mm;
+}
+  
+.topmenu:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: #382742;
+    text-decoration: underline;
+}
+
+/* Container for all the three conversion calculator sections   */
+#all-conversion-sections{
+    display: grid;
+    justify-content: center;
+}
+
+/* Image and caption */
+figure {
+    margin: 0;
+    width: 200px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    color:black;
+    font-size: 17px;
+    text-align: center;
+}
+
+/* Buttons */
+button{
+    font-size: 20px;
+    border: transparent;
+    width: fit-content;
+    background-color: rgb(173, 218, 173);
+    border-radius: 40px;
+    padding: 5px 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+#fahrenheit,#pounds,#miles{
+    font-weight:600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+/* Section boxes */
+.b{
+    border-top-style: solid;
+    border-top-width: 20px;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 600px;     /* changed from fixed width */
+    width: 100%;          /* responsive */
+    min-height: 400px;    /* instead of fixed height */
+    margin: 25px auto;    /* centers and adds spacing */
+    display: flex;
+    flex-direction: row;  /* image + form side by side */
+    gap: 20px;            /* spacing between image and form */
+    padding: 20px;        /* inner spacing */
+}
+
+.temperature{ border-top-color: green; }
+.weight{ border-top-color: coral; }
+.distance{ border-top-color: cyan; }
+
+/* Legend styling */
+legend{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.iconbutton{
+    width:40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: cyan;
+    display: flex;
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+}
+.iconbutton img{
+    width:30px;
+
+}
+footer{
+    background-color: lightpink;
+    margin-top: 20px;
+}
